@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.content {
+  width: 100%;
+  max-width: 574px;
+}
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 13px;
+
+  width: 100%;
+  max-width: 448px;
+  height: 42px;
+
+  background: #ffffff;
+  border: 1px solid #6b7280;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.submit {
+  position: relative;
+  background: #4f46e5;
+  color: #fff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  height: 42px;
+}
+
+.submit:disabled,
+.submit[disabled] {
+  background: #dadada;
+}
+.submit svg {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.submit svg path {
+  fill: #6366f1;
+}
+.submit:disabled svg path,
+.submit[disabled] svg path {
+  fill: #b1b1b1;
+}
+
+.button__resend:disabled {
+  opacity: 0.2;
+}
